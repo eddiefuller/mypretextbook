@@ -6,7 +6,7 @@
 
   <book xml:id="my-great-book">
     <title>Modeling Practices in Calculus</title>
-    <subtitle>An example to get you started</subtitle>
+    <subtitle>Calculus Concepts for Everyone</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
