@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-precalcrev" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Precalculus Review</title>
+
+	<p>
+		<em>This document is intended to be a reference for precalculus topics that will be useful in this course. It is not meant to be an exhaustive overview of all topics covered in the prerequisite courses for this course.</em>
+	</p>
+
+
+	<section xml:id="algebra">
+		<title>Algebra</title>
+
+
+		<subsection xml:id="polynomials">
+			<title>Polynomials</title>
+
+			<p>
+				A <term>polynomial</term> is any expression of the form <m>a_{n}x^n + a_{n-1}x^{n-1} + \dots + a_{1}x + a_0</m> where <m>n</m> is a nonnegative integer and each coefficient, <m>a_n, a_{n-1}, \dots, a_1, a_0</m>, are real numbers.
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								The <term>degree</term> of a polynomial is the largest exponent in the polynomial
+							</p>
+				</li>
+
+				<li>
+							<p>
+								The coefficient of the highest power of <m>x</m> is called the <term>leading coefficient</term>
+							</p>
+				</li>
+
+			</ul></p>
+
+		</subsection>
+
+		<subsection xml:id="factoringexpanding">
+			<title>Factoring/Expanding</title>
+
+			<p>
+				There are certain formulas that will be very useful in factoring and expanding You’ll want to keep these in mind while working with polynomials.
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								<term>Difference of squares</term>: <m>x^2 - y^2 = (x+y)(x-y)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<term>Sum of cubes</term>: <m>x^3 + y^3 = (x+y)(x^2 - xy + y^2)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<term>Difference of cubes</term>: <m>x^3 - y^3 = (x-y)(x^2 + xy + y^2)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<term>Perfect square trinomial</term>: <m>(x \pm y)^2 = x^2 \pm 2xy + y^2</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>(x \pm y)^3 = x^3 \pm 3x^2y + 3xy^2  \pm y^3</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>x^2 + (a+b)x + ab = (x+a)(x+b)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>acx^2 + (bc + ad)x + bd = (ax+b)(cx+d)</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+		</subsection>
+	</section>
+
+	<section xml:id="functions">
+		<title>Functions</title>
+
+		<p>
+			A <term>function</term>, <m>f</m>, is a rule that assigns a single output, <m>f(x)</m>, for each input, <m>x</m>. There are four possible ways to represent a function:
+		</p>
+
+		<p><ul>
+			<li>
+					<p>
+						<term>Verbally</term> – by a description in words
+					</p>
+			</li>
+
+			<li>
+					<p>
+						<term>Numerically</term> – by a table, diagram, or set of ordered pairs of values
+					</p>
+			</li>
+
+			<li>
+					<p>
+						<term>Graphically</term> – by a visual representation on a set of axes
+					</p>
+			</li>
+
+			<li>
+					<p>
+						<term>Algebraically</term> – by an explicit formula or equation
+					</p>
+			</li>
+
+		</ul></p>
+
+		<p>
+			It is required that a function must assign a <em>unique</em> output to each input.
+		</p>
+
+
+		<subsection xml:id="domain-and-range">
+			<title>Domain and Range</title>
+
+			<p>
+				The <term>domain</term> of a function is the set of all possible input values which yield a valid output. The <term>range</term> of a function is the set of all possible (valid) output values over the domain.
+			</p>
+
+
+			<subsubsection xml:id="representing-domain-and-range">
+				<title>Representing domain and range</title>
+
+				<p>
+					Domain and range are commonly represented by intervals. There are three common ways to represent intervals – interval notation, inequalities, and number lines.
+				</p>
+
+
+
+				<p>
+					Note:
+				</p>
+
+				<p><ul>
+					<li>
+									<p>
+										The use of parentheses, open circles, <m>&gt;</m> or <m>&lt;</m> indicates that the value is not included on the interval.
+									</p>
+					</li>
+
+					<li>
+									<p>
+										The use of brackets, closed circles, <m>\geq</m> or <m>\leq</m> indicates that the value is included on the interval.
+									</p>
+					</li>
+
+					<li>
+									<p>
+										Open notation is always used for <m>\infty</m> and <m>-\infty</m>.
+									</p>
+					</li>
+
+				</ul></p>
+
+			</subsubsection>
+
+			<subsubsection xml:id="common-domain-and-range-rules">
+				<title>Common domain and range rules</title>
+
+				<p><ul>
+					<li>
+									<p>
+										You cannot take the even root of a negative number.
+									</p>
+					
+									<p><ul>
+										<li>
+														<p>
+															<m>y = \sqrt{x}, \sqrt[4]{x}, x^{1/6}, x^{3/8},</m> etc. all have domains of <m>x \geq 0</m>.
+														</p>
+										</li>
+					
+									</ul></p>
+					</li>
+
+					<li>
+									<p>
+										You can take the odd root of any number.
+									</p>
+					
+									<p><ul>
+										<li>
+														<p>
+															<m>y = \sqrt[3]{x}, \sqrt[5]{x}, x^{1/7}, x^{4/9},</m> etc. all have domains of <m>(-\infty, \infty)</m>.
+														</p>
+										</li>
+					
+									</ul></p>
+					</li>
+
+					<li>
+									<p>
+										You cannot divide by zero.
+									</p>
+					
+									<p><ul>
+										<li>
+														<p>
+															<m>y = \dfrac{1}{x}, \dfrac{3}{x^2}, x^{-3},</m> etc. all have domains of <m>(-\infty,0) \cup (0,\infty)</m> (or <m>x \neq 0</m>).
+														</p>
+										</li>
+					
+									</ul></p>
+					</li>
+
+					<li>
+									<p>
+										Even powers only yield nonnegative outputs.
+									</p>
+					
+									<p><ul>
+										<li>
+														<p>
+															<m>y = x^2, \sqrt[4]{x}, x^{12}, x^{1/6},</m> etc. all have ranges of <m>y \geq 0</m>.
+														</p>
+										</li>
+					
+									</ul></p>
+					</li>
+
+				</ul></p>
+
+			</subsubsection>
+		</subsection>
+	</section>
+
+	<section xml:id="types-of-functions">
+		<title>Types of Functions</title>
+
+
+		<subsection xml:id="basic-functions">
+			<title>Basic functions</title>
+
+			<p><ul>
+				<li>
+							<p>
+								<term>Linear</term>:<m>f(x) = x</m>
+							</p>
+				
+				
+				</li>
+
+				<li>
+							<p>
+								<term>Even Power</term>: <m>f(x) = x^r</m>, <m>r = 2, 4, 6, \dots</m>
+							</p>
+				
+				
+				</li>
+
+				<li>
+							<p>
+								<term>Odd Power</term>: <m>f(x) = x^r</m>, <m>r = 3, 5, 7, \dots</m>
+							</p>
+				
+				
+				</li>
+
+				<li>
+							<p>
+								<term>Even Root</term>: <m>f(x) = x^{1/r} = \sqrt[r]{x}</m>, <m>r = 2, 4, 6,\dots</m>
+							</p>
+				
+				
+				</li>
+
+				<li>
+							<p>
+								<term>Odd Root</term>: <m>f(x) = x^{1/r} = \sqrt[r]{x}</m>, <m>r = 3, 5, 7, \dots</m>
+							</p>
+				
+				
+				</li>
+
+				<li>
+							<p>
+								<term>Odd Rational</term>: <m>f(x) = \dfrac{1}{x^r} = x^{-r}</m>, <m>r = 1, 3, 5,\dots</m>
+							</p>
+				
+				
+				</li>
+
+				<li>
+							<p>
+								<term>Even Rational</term>: <m>f(x) = \dfrac{1}{x^r} = x^{-r}</m>, <m>r = 2, 4, 6, \dots</m>
+							</p>
+				
+				
+				</li>
+
+				<li>
+							<p>
+								<term>Absolute Value</term>: <m>f(x) = |x|</m>
+							</p>
+				
+				
+				</li>
+
+			</ul></p>
+
+		</subsection>
+
+		<subsection xml:id="piecewise-functions">
+			<title>Piecewise functions</title>
+
+			<p>
+				A <term>piecewise function</term> is a function which is defined differently for different parts of the function’s domain.
+			</p>
+
+			<p>
+				The following is an example of a piecewise function and its corresponding graph. <me>f(x) = \left\{ \begin{array} {ll} x^2 &amp; : x \leq 1 \\ 3 &amp; : 1 &lt; x \leq 2 \\ x &amp; : x &gt; 2 \end{array} \right.</me>
+			</p>
+
+
+
+		</subsection>
+
+		<subsection xml:id="composite-functions">
+			<title>Composite functions</title>
+
+			<p>
+				Given two functions <m>f</m> and <m>g</m>, the <term>composite function</term>, <m>f \circ g</m>, is defined by <m>(f \circ g)(x) = f(g(x))</m>.
+			</p>
+
+		</subsection>
+
+		<subsection xml:id="evenodd-functions">
+			<title>Even/Odd functions</title>
+
+			<p>
+				An <term>even function</term> is one whose graph is symmetric about the <m>y</m>-axis. This means that if the point <m>(x,y)</m> is on the graph, then the point <m>(-x, y)</m> is also on the graph.
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								Algebraically, a function is even if the following is true for all <m>x</m> in its domain: <m>f(-x) = f(x)</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				An <term>odd function</term> is one whose graph is symmetric about the origin. This means that if the point <m>(x,y)</m> is on the graph, then the point <m>(-x, -y)</m> is also on the graph.
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								Algebraically, a function is odd if the following is true for all <m>x</m> in its domain: <m>f(-x) = -f(x)</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+
+
+		</subsection>
+	</section>
+
+	<section xml:id="transformation-of-functions">
+		<title>Transformation of Functions</title>
+
+
+		<subsection xml:id="shifts-in-the-x-and-y-directions">
+			<title>Shifts in the <m>x</m> and <m>y</m> Directions</title>
+
+			<p>
+				For <m>k&gt;0</m> and some function <m>f(x)</m>, the graph of <m>f(x)</m> is transformed by:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								Vertical shift up by <m>k</m> units: <m>y = f(x) + k</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Vertical shift down by <m>k</m> units: <m>y = f(x) - k</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Horizontal shift to the left by <m>k</m> units: <m>y = f(x+k)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Horizontal shift to the right by <m>k</m> units: <m>y = f(x-k)</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+		</subsection>
+
+		<subsection xml:id="scalings-in-the-x-and-y-directions">
+			<title>Scalings in the <m>x</m> and <m>y</m> Directions</title>
+
+			<p>
+				For <m>c&gt;1</m> and some function <m>f(x)</m>, the graph of <m>f(x)</m> is transformed by:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								Vertical stretch by a factor of <m>c</m>: <m>y = cf(x)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Vertical shrink by a factor of <m>c</m>: <m>y = \dfrac{1}{c}f(x)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Horizontal shrink by a factor of <m>c</m>: <m>y = f(cx)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Horizontal stretch by a factor of <m>c</m>: <m>y = f\left(\dfrac{x}{c}\right)</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+		</subsection>
+
+		<subsection xml:id="reflections-about-the-x--and-y-axis">
+			<title>Reflections about the <m>x-</m> and <m>y-</m>axis</title>
+
+			<p>
+				For some function <m>f(x)</m>,
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								Reflect about the <m>x-</m>axis: <m>y = -f(x)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Reflect about the <m>y-</m>axis: <m>y = f(-x)</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+		</subsection>
+	</section>
+
+	<section xml:id="inverse-functions">
+		<title>Inverse Functions</title>
+
+		<p>
+			For a one-to-one function <m>f(x)</m> with domain <m>D</m> and range <m>R</m>, there exists an <term>inverse function</term> of <m>f(x)</m>, <m>f^{-1}(x)</m>, with domain <m>R</m> and range <m>D</m> such that whenever <m>f(x) = y</m>, then <m>f^{-1}(y) = x</m>.
+		</p>
+
+		<p><ul>
+			<li>
+					<p>
+						If the graph of <m>f</m> has the point <m>(x,y)</m>, then the graph of <m>f^{-1}</m> has the point <m>(y,x)</m>.
+					</p>
+			</li>
+
+			<li>
+					<p>
+						A composite of the function with its inverse (or vice versa) yields the independent variable.
+					</p>
+			
+					<p><ul>
+						<li>
+								<p>
+									<m>f^{-1}(f(x)) = x</m>
+								</p>
+						</li>
+			
+						<li>
+								<p>
+									<m>f(f^{-1}(x)) = x</m>
+								</p>
+						</li>
+			
+					</ul></p>
+			</li>
+
+		</ul></p>
+
+		<p>
+			<em>NOTE: <m>f^{-1}</m>(x) is the inverse of <m>f(x)</m>. This is NOT the same as the reciprocal of <m>f(x)</m> which is <m>(f(x))^{-1}</m></em>.
+		</p>
+
+
+		<subsection xml:id="finding-an-inverse-function">
+			<title>Finding an inverse function</title>
+
+			<p>
+				Suppose <m>y = f(x)</m> is a one-to-one function. In order to find <m>f^{-1}(x)</m>:
+			</p>
+
+			<p><ol>
+				<li>
+							<p>
+								Interchange <m>x</m> and <m>y</m> (<m>x \rightarrow y</m> and <m>y \rightarrow x</m>)
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Solve the resulting equation for <m>y</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Let <m>y = f^{-1}(x)</m>
+							</p>
+				</li>
+
+			</ol></p>
+
+		</subsection>
+	</section>
+
+	<section xml:id="exponential-functions">
+		<title>Exponential Functions</title>
+
+		<p>
+			An <term>exponential function</term> is a function of the form <m>f(x) = a^x</m> where <m>a &gt; 0</m> is a real number called the <term>base</term>.
+		</p>
+
+		<p>
+			The <term>natural exponential function</term>, <m>f(x) = e^x</m>, has base <m>e</m>, a non-terminating, non-repeating number (<m>2.718281...</m>).
+		</p>
+
+		<p>
+			If <m>f(x) = a^x</m>, with <m>a&gt;0</m>, then:
+		</p>
+
+		<p><ul>
+			<li>
+					<p>
+						The domain of <m>f(x)</m> is <m>(-\infty,\infty)</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						The range of <m>f(x)</m> is <m>(0,\infty)</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						The graph of <m>f(x)</m> has a horizontal asymptote at <m>y = 0</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						The graph contains the point <m>(0,1)</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						If <m>a &gt; 1</m>, the function is always increasing
+					</p>
+			</li>
+
+			<li>
+					<p>
+						If <m>0&lt;a&lt;1</m>, the function is always decreasing
+					</p>
+			</li>
+
+		</ul></p>
+
+
+
+
+		<subsection xml:id="laws-of-exponents">
+			<title>Laws of Exponents</title>
+
+			<p>
+				For any positive integers <m>m</m> and <m>n</m> and any real numbers <m>a</m> and <m>b</m>,
+			</p>
+
+<!-- div attr= class="itemize"-->
+<!-- div attr= class="multicols"-->
+			<p>
+				2
+			</p>
+
+			<p>
+				<m>a^n = a \cdot a \cdots a</m> (<m>n</m> times)
+			</p>
+
+			<p>
+				<m>a^0 = 1</m>, <m>a \neq 0</m>
+			</p>
+
+			<p>
+				<m>a^{-n} = \dfrac{1}{a^n}</m>, <m>a \neq 0</m>
+			</p>
+
+			<p>
+				<m>a^m \cdot a^n = a^{m+n}</m>
+			</p>
+
+			<p>
+				<m>\dfrac{a^m}{a^n} = a^{m-n}</m>
+			</p>
+
+			<p>
+				<m>\left(a^m\right)^n = a^{m\cdot n}</m>
+			</p>
+
+			<p>
+				<m>\left(a \cdot b\right)^n = a^n \cdot b^n</m>
+			</p>
+
+			<p>
+				<m>a^{m/n} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m</m>
+			</p>
+
+			<p>
+				<m>\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}</m>
+			</p>
+
+			<p>
+				<m>\left(\dfrac{a}{b}\right)^{-n} = \left(\dfrac{b}{a}\right)^n = \dfrac{b^n}{a^n}</m>
+			</p><!--</div attr= class="multicols">--><!--</div attr= class="itemize">-->
+
+			<p>
+				Common errors using exponents:
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								<m>(a+b)^n \neq a^n + b^n</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>(-a)^n \neq -a^n</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+		</subsection>
+	</section>
+
+	<section xml:id="logarithmic-functions">
+		<title>Logarithmic Functions</title>
+
+		<p>
+			The inverse of an exponential function with base <m>a</m>, <m>y = a^x</m>, is a <term>logarithmic function</term> with base <m>a</m>, <m>y = \log_{a}(x)</m>.
+		</p>
+
+		<p>
+			The inverse of the natural exponential function, <m>y = e^x</m>, is the <term>natural logarithmic function</term>, <m>y = \ln(x)</m>.
+		</p>
+
+		<p>
+			If <m>y = \log_{a}(x)</m>,
+		</p>
+
+		<p><ul>
+			<li>
+					<p>
+						This is equivalent to <m>x = a^y</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						The domain of this function is <m>(0, \infty)</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						The range of this function is <m>(-\infty, \infty)</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						The graph of this function has a vertical asymptote at <m>x = 0</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						The graph contains the point <m>(1,0)</m>
+					</p>
+			</li>
+
+		</ul></p>
+
+		<p>
+			Since logarithmic and exponential functions are inverses of each other, then
+		</p>
+
+		<p><ul>
+			<li>
+					<p>
+						<m>\log_{a}(a^x) = x = a^{\log_a(x)}</m>
+					</p>
+			</li>
+
+			<li>
+					<p>
+						<m>\ln(e^x) = x = e^{\ln(x)}</m>
+					</p>
+			</li>
+
+		</ul></p>
+
+
+
+
+		<subsection xml:id="laws-of-logarithms">
+			<title>Laws of Logarithms</title>
+
+			<p>
+				For any positive numbers <m>a, x, y</m>, and any real number <m>r</m>,
+			</p>
+
+<!-- div attr= class="itemize"-->
+<!-- div attr= class="multicols"-->
+			<p>
+				2
+			</p>
+
+			<p>
+				<m>\log_{a}a = 1</m>
+			</p>
+
+			<p>
+				<m>\log_{a}1 = 0</m>
+			</p>
+
+			<p>
+				<m>\log_{a}\left(\dfrac{x}{y}\right) = \log_{a}x - \log_{a}y</m>
+			</p>
+
+			<p>
+				<m>\log_{a}(xy) = \log_{a}x + \log_{a}y</m>
+			</p>
+
+			<p>
+				<m>\log_{a}(x^r) = r\log_{a}x</m>
+			</p>
+
+			<p>
+				<m>\log_{a}x = \dfrac{\ln x}{\ln a}</m>
+			</p><!--</div attr= class="multicols">--><!--</div attr= class="itemize">-->
+
+		</subsection>
+	</section>
+
+	<section xml:id="trigonometry">
+		<title>Trigonometry</title>
+
+
+		<subsection xml:id="the-six-trigonometric-functions">
+			<title>The six trigonometric functions</title>
+
+
+
+			<p>
+				Let <m>(x,y)</m> be a point on a circle of radius <m>r</m> associated with the angle <m>\theta</m>. Note that <m>x</m> represents the length of the horizontal leg of the right triangle formed, <m>y</m> represents the length of the vertical leg, and <m>r</m> represents the length of the hypotenuse. Then the six trigonometric functions are defined as follows:
+			</p>
+
+<!-- div attr= class="itemize"-->
+<!-- div attr= class="multicols"-->
+			<p>
+				2
+			</p>
+
+			<p>
+				<m>\sin\theta = \dfrac{y}{r}</m>
+			</p>
+
+			<p>
+				<m>\cos\theta = \dfrac{x}{r}</m>
+			</p>
+
+			<p>
+				<m>\tan\theta = \dfrac{\sin\theta}{\cos\theta} = \dfrac{y}{x}</m>
+			</p>
+
+			<p>
+				<m>\csc\theta = \dfrac{1}{\sin\theta} = \dfrac{r}{y}</m>
+			</p>
+
+			<p>
+				<m>\sec\theta = \dfrac{1}{\cos\theta} = \dfrac{r}{x}</m>
+			</p>
+
+			<p>
+				<m>\cot\theta = \dfrac{1}{\tan\theta} = \dfrac{\cos\theta}{\sin\theta} = \dfrac{x}{y}</m>
+			</p><!--</div attr= class="multicols">--><!--</div attr= class="itemize">-->
+
+		</subsection>
+
+		<subsection xml:id="the-unit-circle">
+			<title>The Unit Circle</title>
+
+			<p>
+				The <term>unit circle</term> is a circle with radius 1. For any ordered pair, <m>(x,y)</m>, on the unit circle, <m>\cos \theta = x</m> and <m>\sin \theta = y</m>. For example, <m>\cos\left(\dfrac{\pi}{3}\right) = \dfrac{1}{2}</m> and <m>\sin\left(\dfrac{\pi}{3}\right) = \dfrac{\sqrt{3}}{2}</m>.
+			</p>
+
+
+
+			<p>
+				The unit circle is commonly viewed as being sectioned into four quadrants.
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								Quadrant I: Top right quadrant; <m>0 &lt; \theta &lt; \dfrac{\pi}{2}</m>; <m>\sin \theta</m> and <m>\cos\theta</m> are positive
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Quadrant II: Top left quadrant; <m>\dfrac{\pi}{2} &lt; \theta &lt; \pi</m>; <m>\sin \theta</m> is positive, <m>\cos\theta</m> is negative
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Quadrant III: Bottom left quadrant; <m>\pi &lt; \theta &lt; \dfrac{3\pi}{2}</m>; <m>\sin \theta</m> and <m>\cos\theta</m> are negative
+							</p>
+				</li>
+
+				<li>
+							<p>
+								Quadrant IV: Bottom right quadrant; <m>\dfrac{3\pi}{2} &lt; \theta &lt; 2\pi</m>; <m>\sin \theta</m> is negative, <m>\cos\theta</m> is positive
+							</p>
+				</li>
+
+			</ul></p>
+
+		</subsection>
+
+		<subsection xml:id="graphs-of-trigonometric-functions">
+			<title>Graphs of trigonometric functions</title>
+
+
+
+		</subsection>
+
+		<subsection xml:id="inverse-trigonometric-functions">
+			<title>Inverse trigonometric functions</title>
+
+			<p>
+				Trigonometric functions in their conventional sense are not one-to-one since the function values repeat several times. So, in order to define inverse trigonometric functions, we must restrict the domains of our trigonometric functions.
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								<m>\sin^{-1}(x) = \arcsin(x)</m>
+							</p>
+				
+							<p><ul>
+								<li>
+											<p>
+												<m>y = \sin^{-1}(x)</m> is equivalent to <m>x = \sin(y)</m>
+											</p>
+								</li>
+				
+								<li>
+											<p>
+												The domain of <m>y=\sin^{-1}(x)</m> is <m>-1 \leq x \leq 1</m>
+											</p>
+								</li>
+				
+								<li>
+											<p>
+												The range of <m>y=\sin^{-1}(x)</m> is <m>-\dfrac{\pi}{2} \leq y \leq \dfrac{\pi}{2}</m>
+											</p>
+								</li>
+				
+							</ul></p>
+				</li>
+
+				<li>
+							<p>
+								<m>\cos^{-1}(x) = \arccos(x)</m>
+							</p>
+				
+							<p><ul>
+								<li>
+											<p>
+												<m>y = \cos^{-1}(x)</m> is equivalent to <m>x = \cos(y)</m>
+											</p>
+								</li>
+				
+								<li>
+											<p>
+												The domain of <m>y=\cos^{-1}(x)</m> is <m>-1 \leq x \leq 1</m>
+											</p>
+								</li>
+				
+								<li>
+											<p>
+												The range of <m>y=\cos^{-1}(x)</m> is <m>0 \leq y \leq \pi</m>
+											</p>
+								</li>
+				
+							</ul></p>
+				</li>
+
+				<li>
+							<p>
+								<m>\tan^{-1}(x) = \arctan(x)</m>
+							</p>
+				
+							<p><ul>
+								<li>
+											<p>
+												<m>y = \tan^{-1}(x)</m> is equivalent to <m>x = \tan(y)</m>
+											</p>
+								</li>
+				
+								<li>
+											<p>
+												The domain of <m>y=\tan^{-1}(x)</m> is <m>-\infty &lt; x &lt; \infty</m>
+											</p>
+								</li>
+				
+								<li>
+											<p>
+												The range of <m>y=\tan^{-1}(x)</m> is <m>-\dfrac{\pi}{2} &lt; y &lt; \dfrac{\pi}{2}</m>
+											</p>
+								</li>
+				
+							</ul></p>
+				</li>
+
+			</ul></p>
+
+		</subsection>
+
+		<subsection xml:id="trigonometric-identities">
+			<title>Trigonometric identities</title>
+
+			<p>
+				<term>Pythagorian Trigonometric Identities</term>
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								<m>\sin^2(x) + \cos^2(x) = 1</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>\tan^2(x) + 1 = \sec^2(x)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>\cot^2(x) + 1 = \csc^2(x)</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				<term>Addition/Subtraction Formulas</term>
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								<m>\sin(x+y) = \sin(x) \cos(y) + \cos(x)\sin(y)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>\cos(x+y) = \cos(x) \cos(y) - \sin(x) \sin(y)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>\sin(x-y) = \sin(x) \cos(y) - \cos(x) \sin(y)</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>\cos(x-y) = \cos(x) \cos(y) + \sin(x) \sin(y)</m>
+							</p>
+				</li>
+
+			</ul></p>
+
+			<p>
+				<term>Double-Angle Formulas</term>
+			</p>
+
+			<p><ul>
+				<li>
+							<p>
+								<m>\sin(2x) = 2\sin x \cos x</m>
+							</p>
+				</li>
+
+				<li>
+							<p>
+								<m>\cos(2x) = \cos^2 x - \sin^2 x</m>
+							</p>
+				</li>
+
+			</ul></p>
+		</subsection>
+
+	</section>
+
+
+
+</section>
