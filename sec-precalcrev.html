@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Precalculus Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Modeling Practices in Calculus">
+<meta property="book:author" content="You">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.787a04695534ef1e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.014cb392a13bd045.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Modeling Practices in Calculus</span> <span class="subtitle">An example to get you started</span></a></h1>
+<p class="byline">You</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-section-intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-chapter-title.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Chapter 1: Getting Started</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-section-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-precalcrev.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Precalculus Review</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#algebra" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Algebra</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#polynomials" class="internal"><span class="codenumber">1.2.1.1</span> <span class="title">Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#factoringexpanding" class="internal"><span class="codenumber">1.2.1.2</span> <span class="title">Factoring/Expanding</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#functions" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#domain-and-range" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Domain and Range</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-precalcrev.html#representing-domain-and-range" class="internal"><span class="title">Representing domain and range</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-precalcrev.html#common-domain-and-range-rules" class="internal"><span class="title">Common domain and range rules</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#types-of-functions" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Types of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#basic-functions" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title">Basic functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#piecewise-functions" class="internal"><span class="codenumber">1.2.3.2</span> <span class="title">Piecewise functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#composite-functions" class="internal"><span class="codenumber">1.2.3.3</span> <span class="title">Composite functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#evenodd-functions" class="internal"><span class="codenumber">1.2.3.4</span> <span class="title">Even/Odd functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#transformation-of-functions" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Transformation of Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#shifts-in-the-x-and-y-directions" class="internal"><span class="codenumber">1.2.4.1</span> <span class="title">Shifts in the <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> Directions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#scalings-in-the-x-and-y-directions" class="internal"><span class="codenumber">1.2.4.2</span> <span class="title">Scalings in the <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> Directions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#reflections-about-the-x--and-y-axis" class="internal"><span class="codenumber">1.2.4.3</span> <span class="title">Reflections about the <span class="process-math">\(x-\)</span> and <span class="process-math">\(y-\)</span>axis</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#inverse-functions" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Inverse Functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#finding-an-inverse-function" class="internal"><span class="codenumber">1.2.5.1</span> <span class="title">Finding an inverse function</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#exponential-functions" class="internal"><span class="codenumber">1.2.6</span> <span class="title">Exponential Functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#laws-of-exponents" class="internal"><span class="codenumber">1.2.6.1</span> <span class="title">Laws of Exponents</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#logarithmic-functions" class="internal"><span class="codenumber">1.2.7</span> <span class="title">Logarithmic Functions</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#laws-of-logarithms" class="internal"><span class="codenumber">1.2.7.1</span> <span class="title">Laws of Logarithms</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-precalcrev.html#trigonometry" class="internal"><span class="codenumber">1.2.8</span> <span class="title">Trigonometry</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#the-six-trigonometric-functions" class="internal"><span class="codenumber">1.2.8.1</span> <span class="title">The six trigonometric functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#the-unit-circle" class="internal"><span class="codenumber">1.2.8.2</span> <span class="title">The Unit Circle</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#graphs-of-trigonometric-functions" class="internal"><span class="codenumber">1.2.8.3</span> <span class="title">Graphs of trigonometric functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#inverse-trigonometric-functions" class="internal"><span class="codenumber">1.2.8.4</span> <span class="title">Inverse trigonometric functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-precalcrev.html#trigonometric-identities" class="internal"><span class="codenumber">1.2.8.5</span> <span class="title">Trigonometric identities</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-precalcrev"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Precalculus Review</span>
+</h2>
+<div class="para" id="sec-precalcrev-2">
+<em class="emphasis">This document is intended to be a reference for precalculus topics that will be useful in this course. It is not meant to be an exhaustive overview of all topics covered in the prerequisite courses for this course.</em><div class="autopermalink" data-description="Paragraph"><a href="#sec-precalcrev-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="algebra"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="space"> </span><span class="title">Algebra</span>
+</h3>
+<section class="subsection" id="polynomials"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1.1</span><span class="space"> </span><span class="title">Polynomials</span>
+</h4>
+<div class="para" id="polynomials-2">A <dfn class="terminology">polynomial</dfn> is any expression of the form <span class="process-math">\(a_{n}x^n + a_{n-1}x^{n-1} + \dots + a_{1}x + a_0\)</span> where <span class="process-math">\(n\)</span> is a nonnegative integer and each coefficient, <span class="process-math">\(a_n, a_{n-1}, \dots, a_1, a_0\text{,}\)</span> are real numbers.<div class="autopermalink" data-description="Paragraph"><a href="#polynomials-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="polynomials-3">
+<ul class="disc" id="polynomials-3-1">
+<li id="polynomials-3-1-1">
+<div class="para" id="polynomials-3-1-1-1">The <dfn class="terminology">degree</dfn> of a polynomial is the largest exponent in the polynomial<div class="autopermalink" data-description="Paragraph"><a href="#polynomials-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#polynomials-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="polynomials-3-1-2">
+<div class="para" id="polynomials-3-1-2-1">The coefficient of the highest power of <span class="process-math">\(x\)</span> is called the <dfn class="terminology">leading coefficient</dfn><div class="autopermalink" data-description="Paragraph"><a href="#polynomials-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#polynomials-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#polynomials-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.1.1: Polynomials"><a href="#polynomials" title="Copy heading and permalink for Subsection 1.2.1.1: Polynomials" aria-label="Copy heading and permalink for Subsection 1.2.1.1: Polynomials">🔗</a></div></section><section class="subsection" id="factoringexpanding"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.1.2</span><span class="space"> </span><span class="title">Factoring/Expanding</span>
+</h4>
+<div class="para" id="factoringexpanding-2">There are certain formulas that will be very useful in factoring and expanding You’ll want to keep these in mind while working with polynomials.<div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="factoringexpanding-3">
+<ul class="disc" id="factoringexpanding-3-1">
+<li id="factoringexpanding-3-1-1">
+<div class="para" id="factoringexpanding-3-1-1-1">
+<dfn class="terminology">Difference of squares</dfn>: <span class="process-math">\(x^2 - y^2 = (x+y)(x-y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#factoringexpanding-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="factoringexpanding-3-1-2">
+<div class="para" id="factoringexpanding-3-1-2-1">
+<dfn class="terminology">Sum of cubes</dfn>: <span class="process-math">\(x^3 + y^3 = (x+y)(x^2 - xy + y^2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#factoringexpanding-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="factoringexpanding-3-1-3">
+<div class="para" id="factoringexpanding-3-1-3-1">
+<dfn class="terminology">Difference of cubes</dfn>: <span class="process-math">\(x^3 - y^3 = (x-y)(x^2 + xy + y^2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#factoringexpanding-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="factoringexpanding-3-1-4">
+<div class="para" id="factoringexpanding-3-1-4-1">
+<dfn class="terminology">Perfect square trinomial</dfn>: <span class="process-math">\((x \pm y)^2 = x^2 \pm 2xy + y^2\)</span><div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#factoringexpanding-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="factoringexpanding-3-1-5">
+<div class="para" id="factoringexpanding-3-1-5-1">
+<span class="process-math">\(\displaystyle (x \pm y)^3 = x^3 \pm 3x^2y + 3xy^2  \pm y^3\)</span><div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#factoringexpanding-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="factoringexpanding-3-1-6">
+<div class="para" id="factoringexpanding-3-1-6-1">
+<span class="process-math">\(\displaystyle x^2 + (a+b)x + ab = (x+a)(x+b)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#factoringexpanding-3-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="factoringexpanding-3-1-7">
+<div class="para" id="factoringexpanding-3-1-7-1">
+<span class="process-math">\(\displaystyle acx^2 + (bc + ad)x + bd = (ax+b)(cx+d)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#factoringexpanding-3-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#factoringexpanding-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.1.2: Factoring/Expanding"><a href="#factoringexpanding" title="Copy heading and permalink for Subsection 1.2.1.2: Factoring/Expanding" aria-label="Copy heading and permalink for Subsection 1.2.1.2: Factoring/Expanding">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.1: Algebra"><a href="#algebra" title="Copy heading and permalink for Subsection 1.2.1: Algebra" aria-label="Copy heading and permalink for Subsection 1.2.1: Algebra">🔗</a></div></section><section class="subsection" id="functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="space"> </span><span class="title">Functions</span>
+</h3>
+<div class="para" id="functions-2">A <dfn class="terminology">function</dfn>, <span class="process-math">\(f\text{,}\)</span> is a rule that assigns a single output, <span class="process-math">\(f(x)\text{,}\)</span> for each input, <span class="process-math">\(x\text{.}\)</span> There are four possible ways to represent a function:<div class="autopermalink" data-description="Paragraph"><a href="#functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="functions-3">
+<ul class="disc" id="functions-3-1">
+<li id="functions-3-1-1">
+<div class="para" id="functions-3-1-1-1">
+<dfn class="terminology">Verbally</dfn> – by a description in words<div class="autopermalink" data-description="Paragraph"><a href="#functions-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#functions-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="functions-3-1-2">
+<div class="para" id="functions-3-1-2-1">
+<dfn class="terminology">Numerically</dfn> – by a table, diagram, or set of ordered pairs of values<div class="autopermalink" data-description="Paragraph"><a href="#functions-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#functions-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="functions-3-1-3">
+<div class="para" id="functions-3-1-3-1">
+<dfn class="terminology">Graphically</dfn> – by a visual representation on a set of axes<div class="autopermalink" data-description="Paragraph"><a href="#functions-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#functions-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="functions-3-1-4">
+<div class="para" id="functions-3-1-4-1">
+<dfn class="terminology">Algebraically</dfn> – by an explicit formula or equation<div class="autopermalink" data-description="Paragraph"><a href="#functions-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#functions-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="functions-4">It is required that a function must assign a <em class="emphasis">unique</em> output to each input.<div class="autopermalink" data-description="Paragraph"><a href="#functions-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="domain-and-range"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.2.1</span><span class="space"> </span><span class="title">Domain and Range</span>
+</h4>
+<div class="para" id="domain-and-range-2">The <dfn class="terminology">domain</dfn> of a function is the set of all possible input values which yield a valid output. The <dfn class="terminology">range</dfn> of a function is the set of all possible (valid) output values over the domain.<div class="autopermalink" data-description="Paragraph"><a href="#domain-and-range-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsubsection" id="representing-domain-and-range"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Representing domain and range</span>
+</h5>
+<div class="para" id="representing-domain-and-range-2">Domain and range are commonly represented by intervals. There are three common ways to represent intervals – interval notation, inequalities, and number lines.<div class="autopermalink" data-description="Paragraph"><a href="#representing-domain-and-range-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="representing-domain-and-range-3">Note:<div class="autopermalink" data-description="Paragraph"><a href="#representing-domain-and-range-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="representing-domain-and-range-4">
+<ul class="disc" id="representing-domain-and-range-4-1">
+<li id="representing-domain-and-range-4-1-1">
+<div class="para" id="representing-domain-and-range-4-1-1-1">The use of parentheses, open circles, <span class="process-math">\(&gt;\)</span> or <span class="process-math">\(&lt;\)</span> indicates that the value is not included on the interval.<div class="autopermalink" data-description="Paragraph"><a href="#representing-domain-and-range-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#representing-domain-and-range-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="representing-domain-and-range-4-1-2">
+<div class="para" id="representing-domain-and-range-4-1-2-1">The use of brackets, closed circles, <span class="process-math">\(\geq\)</span> or <span class="process-math">\(\leq\)</span> indicates that the value is included on the interval.<div class="autopermalink" data-description="Paragraph"><a href="#representing-domain-and-range-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#representing-domain-and-range-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="representing-domain-and-range-4-1-3">
+<div class="para" id="representing-domain-and-range-4-1-3-1">Open notation is always used for <span class="process-math">\(\infty\)</span> and <span class="process-math">\(-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#representing-domain-and-range-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#representing-domain-and-range-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#representing-domain-and-range-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Representing domain and range"><a href="#representing-domain-and-range" title="Copy heading and permalink for Subsubsection: Representing domain and range" aria-label="Copy heading and permalink for Subsubsection: Representing domain and range">🔗</a></div></section><section class="subsubsection" id="common-domain-and-range-rules"><h5 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Common domain and range rules</span>
+</h5>
+<div class="para logical" id="common-domain-and-range-rules-2">
+<ul class="disc" id="common-domain-and-range-rules-2-1">
+<li id="common-domain-and-range-rules-2-1-1">
+<div class="para" id="common-domain-and-range-rules-2-1-1-1">You cannot take the even root of a negative number.<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="common-domain-and-range-rules-2-1-1-2">
+<ul class="circle" id="common-domain-and-range-rules-2-1-1-2-1"><li id="common-domain-and-range-rules-2-1-1-2-1-1">
+<div class="para" id="common-domain-and-range-rules-2-1-1-2-1-1-1">
+<span class="process-math">\(y = \sqrt{x}, \sqrt[4]{x}, x^{1/6}, x^{3/8},\)</span> etc. all have domains of <span class="process-math">\(x \geq 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#common-domain-and-range-rules-2-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#common-domain-and-range-rules-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="common-domain-and-range-rules-2-1-2">
+<div class="para" id="common-domain-and-range-rules-2-1-2-1">You can take the odd root of any number.<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="common-domain-and-range-rules-2-1-2-2">
+<ul class="circle" id="common-domain-and-range-rules-2-1-2-2-1"><li id="common-domain-and-range-rules-2-1-2-2-1-1">
+<div class="para" id="common-domain-and-range-rules-2-1-2-2-1-1-1">
+<span class="process-math">\(y = \sqrt[3]{x}, \sqrt[5]{x}, x^{1/7}, x^{4/9},\)</span> etc. all have domains of <span class="process-math">\((-\infty, \infty)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#common-domain-and-range-rules-2-1-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#common-domain-and-range-rules-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="common-domain-and-range-rules-2-1-3">
+<div class="para" id="common-domain-and-range-rules-2-1-3-1">You cannot divide by zero.<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="common-domain-and-range-rules-2-1-3-2">
+<ul class="circle" id="common-domain-and-range-rules-2-1-3-2-1"><li id="common-domain-and-range-rules-2-1-3-2-1-1">
+<div class="para" id="common-domain-and-range-rules-2-1-3-2-1-1-1">
+<span class="process-math">\(y = \dfrac{1}{x}, \dfrac{3}{x^2}, x^{-3},\)</span> etc. all have domains of <span class="process-math">\((-\infty,0) \cup (0,\infty)\)</span> (or <span class="process-math">\(x \neq 0\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#common-domain-and-range-rules-2-1-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#common-domain-and-range-rules-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="common-domain-and-range-rules-2-1-4">
+<div class="para" id="common-domain-and-range-rules-2-1-4-1">Even powers only yield nonnegative outputs.<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="common-domain-and-range-rules-2-1-4-2">
+<ul class="circle" id="common-domain-and-range-rules-2-1-4-2-1"><li id="common-domain-and-range-rules-2-1-4-2-1-1">
+<div class="para" id="common-domain-and-range-rules-2-1-4-2-1-1-1">
+<span class="process-math">\(y = x^2, \sqrt[4]{x}, x^{12}, x^{1/6},\)</span> etc. all have ranges of <span class="process-math">\(y \geq 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#common-domain-and-range-rules-2-1-4-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#common-domain-and-range-rules-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#common-domain-and-range-rules-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection: Common domain and range rules"><a href="#common-domain-and-range-rules" title="Copy heading and permalink for Subsubsection: Common domain and range rules" aria-label="Copy heading and permalink for Subsubsection: Common domain and range rules">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.2.1: Domain and Range"><a href="#domain-and-range" title="Copy heading and permalink for Subsection 1.2.2.1: Domain and Range" aria-label="Copy heading and permalink for Subsection 1.2.2.1: Domain and Range">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.2: Functions"><a href="#functions" title="Copy heading and permalink for Subsection 1.2.2: Functions" aria-label="Copy heading and permalink for Subsection 1.2.2: Functions">🔗</a></div></section><section class="subsection" id="types-of-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="space"> </span><span class="title">Types of Functions</span>
+</h3>
+<section class="subsection" id="basic-functions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3.1</span><span class="space"> </span><span class="title">Basic functions</span>
+</h4>
+<div class="para logical" id="basic-functions-2">
+<ul class="disc" id="basic-functions-2-1">
+<li id="basic-functions-2-1-1">
+<div class="para" id="basic-functions-2-1-1-1">
+<dfn class="terminology">Linear</dfn>:<span class="process-math">\(f(x) = x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#basic-functions-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="basic-functions-2-1-2">
+<div class="para" id="basic-functions-2-1-2-1">
+<dfn class="terminology">Even Power</dfn>: <span class="process-math">\(f(x) = x^r\text{,}\)</span> <span class="process-math">\(r = 2, 4, 6, \dots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#basic-functions-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="basic-functions-2-1-3">
+<div class="para" id="basic-functions-2-1-3-1">
+<dfn class="terminology">Odd Power</dfn>: <span class="process-math">\(f(x) = x^r\text{,}\)</span> <span class="process-math">\(r = 3, 5, 7, \dots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#basic-functions-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="basic-functions-2-1-4">
+<div class="para" id="basic-functions-2-1-4-1">
+<dfn class="terminology">Even Root</dfn>: <span class="process-math">\(f(x) = x^{1/r} = \sqrt[r]{x}\text{,}\)</span> <span class="process-math">\(r = 2, 4, 6,\dots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#basic-functions-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="basic-functions-2-1-5">
+<div class="para" id="basic-functions-2-1-5-1">
+<dfn class="terminology">Odd Root</dfn>: <span class="process-math">\(f(x) = x^{1/r} = \sqrt[r]{x}\text{,}\)</span> <span class="process-math">\(r = 3, 5, 7, \dots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#basic-functions-2-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="basic-functions-2-1-6">
+<div class="para" id="basic-functions-2-1-6-1">
+<dfn class="terminology">Odd Rational</dfn>: <span class="process-math">\(f(x) = \dfrac{1}{x^r} = x^{-r}\text{,}\)</span> <span class="process-math">\(r = 1, 3, 5,\dots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#basic-functions-2-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="basic-functions-2-1-7">
+<div class="para" id="basic-functions-2-1-7-1">
+<dfn class="terminology">Even Rational</dfn>: <span class="process-math">\(f(x) = \dfrac{1}{x^r} = x^{-r}\text{,}\)</span> <span class="process-math">\(r = 2, 4, 6, \dots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#basic-functions-2-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="basic-functions-2-1-8">
+<div class="para" id="basic-functions-2-1-8-1">
+<dfn class="terminology">Absolute Value</dfn>: <span class="process-math">\(f(x) = |x|\)</span><div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#basic-functions-2-1-8" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#basic-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.3.1: Basic functions"><a href="#basic-functions" title="Copy heading and permalink for Subsection 1.2.3.1: Basic functions" aria-label="Copy heading and permalink for Subsection 1.2.3.1: Basic functions">🔗</a></div></section><section class="subsection" id="piecewise-functions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3.2</span><span class="space"> </span><span class="title">Piecewise functions</span>
+</h4>
+<div class="para" id="piecewise-functions-2">A <dfn class="terminology">piecewise function</dfn> is a function which is defined differently for different parts of the function’s domain.<div class="autopermalink" data-description="Paragraph"><a href="#piecewise-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="piecewise-functions-3">
+<div class="para">The following is an example of a piecewise function and its corresponding graph.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \left\{ \begin{array} {ll} x^2 &amp; : x \leq 1 \\ 3 &amp; : 1 &lt; x \leq 2 \\ x &amp; : x &gt; 2 \end{array} \right.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#piecewise-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.3.2: Piecewise functions"><a href="#piecewise-functions" title="Copy heading and permalink for Subsection 1.2.3.2: Piecewise functions" aria-label="Copy heading and permalink for Subsection 1.2.3.2: Piecewise functions">🔗</a></div></section><section class="subsection" id="composite-functions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3.3</span><span class="space"> </span><span class="title">Composite functions</span>
+</h4>
+<div class="para" id="composite-functions-2">Given two functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{,}\)</span> the <dfn class="terminology">composite function</dfn>, <span class="process-math">\(f \circ g\text{,}\)</span> is defined by <span class="process-math">\((f \circ g)(x) = f(g(x))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#composite-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.3.3: Composite functions"><a href="#composite-functions" title="Copy heading and permalink for Subsection 1.2.3.3: Composite functions" aria-label="Copy heading and permalink for Subsection 1.2.3.3: Composite functions">🔗</a></div></section><section class="subsection" id="evenodd-functions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.3.4</span><span class="space"> </span><span class="title">Even/Odd functions</span>
+</h4>
+<div class="para" id="evenodd-functions-2">An <dfn class="terminology">even function</dfn> is one whose graph is symmetric about the <span class="process-math">\(y\)</span>-axis. This means that if the point <span class="process-math">\((x,y)\)</span> is on the graph, then the point <span class="process-math">\((-x, y)\)</span> is also on the graph.<div class="autopermalink" data-description="Paragraph"><a href="#evenodd-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="evenodd-functions-3">
+<ul class="disc" id="evenodd-functions-3-1"><li id="evenodd-functions-3-1-1">
+<div class="para" id="evenodd-functions-3-1-1-1">Algebraically, a function is even if the following is true for all <span class="process-math">\(x\)</span> in its domain: <span class="process-math">\(f(-x) = f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#evenodd-functions-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#evenodd-functions-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#evenodd-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="evenodd-functions-4">An <dfn class="terminology">odd function</dfn> is one whose graph is symmetric about the origin. This means that if the point <span class="process-math">\((x,y)\)</span> is on the graph, then the point <span class="process-math">\((-x, -y)\)</span> is also on the graph.<div class="autopermalink" data-description="Paragraph"><a href="#evenodd-functions-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="evenodd-functions-5">
+<ul class="disc" id="evenodd-functions-5-1"><li id="evenodd-functions-5-1-1">
+<div class="para" id="evenodd-functions-5-1-1-1">Algebraically, a function is odd if the following is true for all <span class="process-math">\(x\)</span> in its domain: <span class="process-math">\(f(-x) = -f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#evenodd-functions-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#evenodd-functions-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li></ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#evenodd-functions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.3.4: Even/Odd functions"><a href="#evenodd-functions" title="Copy heading and permalink for Subsection 1.2.3.4: Even/Odd functions" aria-label="Copy heading and permalink for Subsection 1.2.3.4: Even/Odd functions">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.3: Types of Functions"><a href="#types-of-functions" title="Copy heading and permalink for Subsection 1.2.3: Types of Functions" aria-label="Copy heading and permalink for Subsection 1.2.3: Types of Functions">🔗</a></div></section><section class="subsection" id="transformation-of-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="space"> </span><span class="title">Transformation of Functions</span>
+</h3>
+<section class="subsection" id="shifts-in-the-x-and-y-directions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4.1</span><span class="space"> </span><span class="title">Shifts in the <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> Directions</span>
+</h4>
+<div class="para" id="shifts-in-the-x-and-y-directions-2">For <span class="process-math">\(k&gt;0\)</span> and some function <span class="process-math">\(f(x)\text{,}\)</span> the graph of <span class="process-math">\(f(x)\)</span> is transformed by:<div class="autopermalink" data-description="Paragraph"><a href="#shifts-in-the-x-and-y-directions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="shifts-in-the-x-and-y-directions-3">
+<ul class="disc" id="shifts-in-the-x-and-y-directions-3-1">
+<li id="shifts-in-the-x-and-y-directions-3-1-1">
+<div class="para" id="shifts-in-the-x-and-y-directions-3-1-1-1">Vertical shift up by <span class="process-math">\(k\)</span> units: <span class="process-math">\(y = f(x) + k\)</span><div class="autopermalink" data-description="Paragraph"><a href="#shifts-in-the-x-and-y-directions-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#shifts-in-the-x-and-y-directions-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="shifts-in-the-x-and-y-directions-3-1-2">
+<div class="para" id="shifts-in-the-x-and-y-directions-3-1-2-1">Vertical shift down by <span class="process-math">\(k\)</span> units: <span class="process-math">\(y = f(x) - k\)</span><div class="autopermalink" data-description="Paragraph"><a href="#shifts-in-the-x-and-y-directions-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#shifts-in-the-x-and-y-directions-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="shifts-in-the-x-and-y-directions-3-1-3">
+<div class="para" id="shifts-in-the-x-and-y-directions-3-1-3-1">Horizontal shift to the left by <span class="process-math">\(k\)</span> units: <span class="process-math">\(y = f(x+k)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#shifts-in-the-x-and-y-directions-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#shifts-in-the-x-and-y-directions-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="shifts-in-the-x-and-y-directions-3-1-4">
+<div class="para" id="shifts-in-the-x-and-y-directions-3-1-4-1">Horizontal shift to the right by <span class="process-math">\(k\)</span> units: <span class="process-math">\(y = f(x-k)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#shifts-in-the-x-and-y-directions-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#shifts-in-the-x-and-y-directions-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#shifts-in-the-x-and-y-directions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.4.1: Shifts in the x and y Directions"><a href="#shifts-in-the-x-and-y-directions" title="Copy heading and permalink for Subsection 1.2.4.1: Shifts in the x and y Directions" aria-label="Copy heading and permalink for Subsection 1.2.4.1: Shifts in the x and y Directions">🔗</a></div></section><section class="subsection" id="scalings-in-the-x-and-y-directions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4.2</span><span class="space"> </span><span class="title">Scalings in the <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> Directions</span>
+</h4>
+<div class="para" id="scalings-in-the-x-and-y-directions-2">For <span class="process-math">\(c&gt;1\)</span> and some function <span class="process-math">\(f(x)\text{,}\)</span> the graph of <span class="process-math">\(f(x)\)</span> is transformed by:<div class="autopermalink" data-description="Paragraph"><a href="#scalings-in-the-x-and-y-directions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="scalings-in-the-x-and-y-directions-3">
+<ul class="disc" id="scalings-in-the-x-and-y-directions-3-1">
+<li id="scalings-in-the-x-and-y-directions-3-1-1">
+<div class="para" id="scalings-in-the-x-and-y-directions-3-1-1-1">Vertical stretch by a factor of <span class="process-math">\(c\text{:}\)</span> <span class="process-math">\(y = cf(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#scalings-in-the-x-and-y-directions-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#scalings-in-the-x-and-y-directions-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="scalings-in-the-x-and-y-directions-3-1-2">
+<div class="para" id="scalings-in-the-x-and-y-directions-3-1-2-1">Vertical shrink by a factor of <span class="process-math">\(c\text{:}\)</span> <span class="process-math">\(y = \dfrac{1}{c}f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#scalings-in-the-x-and-y-directions-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#scalings-in-the-x-and-y-directions-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="scalings-in-the-x-and-y-directions-3-1-3">
+<div class="para" id="scalings-in-the-x-and-y-directions-3-1-3-1">Horizontal shrink by a factor of <span class="process-math">\(c\text{:}\)</span> <span class="process-math">\(y = f(cx)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#scalings-in-the-x-and-y-directions-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#scalings-in-the-x-and-y-directions-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="scalings-in-the-x-and-y-directions-3-1-4">
+<div class="para" id="scalings-in-the-x-and-y-directions-3-1-4-1">Horizontal stretch by a factor of <span class="process-math">\(c\text{:}\)</span> <span class="process-math">\(y = f\left(\dfrac{x}{c}\right)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#scalings-in-the-x-and-y-directions-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#scalings-in-the-x-and-y-directions-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#scalings-in-the-x-and-y-directions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.4.2: Scalings in the x and y Directions"><a href="#scalings-in-the-x-and-y-directions" title="Copy heading and permalink for Subsection 1.2.4.2: Scalings in the x and y Directions" aria-label="Copy heading and permalink for Subsection 1.2.4.2: Scalings in the x and y Directions">🔗</a></div></section><section class="subsection" id="reflections-about-the-x--and-y-axis"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.4.3</span><span class="space"> </span><span class="title">Reflections about the <span class="process-math">\(x-\)</span> and <span class="process-math">\(y-\)</span>axis</span>
+</h4>
+<div class="para" id="reflections-about-the-x--and-y-axis-2">For some function <span class="process-math">\(f(x)\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#reflections-about-the-x--and-y-axis-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="reflections-about-the-x--and-y-axis-3">
+<ul class="disc" id="reflections-about-the-x--and-y-axis-3-1">
+<li id="reflections-about-the-x--and-y-axis-3-1-1">
+<div class="para" id="reflections-about-the-x--and-y-axis-3-1-1-1">Reflect about the <span class="process-math">\(x-\)</span>axis: <span class="process-math">\(y = -f(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#reflections-about-the-x--and-y-axis-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#reflections-about-the-x--and-y-axis-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="reflections-about-the-x--and-y-axis-3-1-2">
+<div class="para" id="reflections-about-the-x--and-y-axis-3-1-2-1">Reflect about the <span class="process-math">\(y-\)</span>axis: <span class="process-math">\(y = f(-x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#reflections-about-the-x--and-y-axis-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#reflections-about-the-x--and-y-axis-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#reflections-about-the-x--and-y-axis-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.4.3: Reflections about the x- and y-axis"><a href="#reflections-about-the-x--and-y-axis" title="Copy heading and permalink for Subsection 1.2.4.3: Reflections about the x- and y-axis" aria-label="Copy heading and permalink for Subsection 1.2.4.3: Reflections about the x- and y-axis">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.4: Transformation of Functions"><a href="#transformation-of-functions" title="Copy heading and permalink for Subsection 1.2.4: Transformation of Functions" aria-label="Copy heading and permalink for Subsection 1.2.4: Transformation of Functions">🔗</a></div></section><section class="subsection" id="inverse-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="space"> </span><span class="title">Inverse Functions</span>
+</h3>
+<div class="para" id="inverse-functions-2">For a one-to-one function <span class="process-math">\(f(x)\)</span> with domain <span class="process-math">\(D\)</span> and range <span class="process-math">\(R\text{,}\)</span> there exists an <dfn class="terminology">inverse function</dfn> of <span class="process-math">\(f(x)\text{,}\)</span> <span class="process-math">\(f^{-1}(x)\text{,}\)</span> with domain <span class="process-math">\(R\)</span> and range <span class="process-math">\(D\)</span> such that whenever <span class="process-math">\(f(x) = y\text{,}\)</span> then <span class="process-math">\(f^{-1}(y) = x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="inverse-functions-3">
+<ul class="disc" id="inverse-functions-3-1">
+<li id="inverse-functions-3-1-1">
+<div class="para" id="inverse-functions-3-1-1-1">If the graph of <span class="process-math">\(f\)</span> has the point <span class="process-math">\((x,y)\text{,}\)</span> then the graph of <span class="process-math">\(f^{-1}\)</span> has the point <span class="process-math">\((y,x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-functions-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-functions-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-functions-3-1-2">
+<div class="para" id="inverse-functions-3-1-2-1">A composite of the function with its inverse (or vice versa) yields the independent variable.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-functions-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="inverse-functions-3-1-2-2">
+<ul class="circle" id="inverse-functions-3-1-2-2-1">
+<li id="inverse-functions-3-1-2-2-1-1">
+<div class="para" id="inverse-functions-3-1-2-2-1-1-1">
+<span class="process-math">\(\displaystyle f^{-1}(f(x)) = x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-functions-3-1-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-functions-3-1-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-functions-3-1-2-2-1-2">
+<div class="para" id="inverse-functions-3-1-2-2-1-2-1">
+<span class="process-math">\(\displaystyle f(f^{-1}(x)) = x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-functions-3-1-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-functions-3-1-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#inverse-functions-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-functions-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#inverse-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="inverse-functions-4">
+<em class="emphasis">NOTE: <span class="process-math">\(f^{-1}\)</span>(x) is the inverse of <span class="process-math">\(f(x)\text{.}\)</span> This is NOT the same as the reciprocal of <span class="process-math">\(f(x)\)</span> which is <span class="process-math">\((f(x))^{-1}\)</span></em>.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-functions-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="finding-an-inverse-function"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.5.1</span><span class="space"> </span><span class="title">Finding an inverse function</span>
+</h4>
+<div class="para" id="finding-an-inverse-function-2">Suppose <span class="process-math">\(y = f(x)\)</span> is a one-to-one function. In order to find <span class="process-math">\(f^{-1}(x)\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#finding-an-inverse-function-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="finding-an-inverse-function-3">
+<ol class="decimal" id="finding-an-inverse-function-3-1">
+<li id="finding-an-inverse-function-3-1-1">
+<div class="para" id="finding-an-inverse-function-3-1-1-1">Interchange <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> (<span class="process-math">\(x \rightarrow y\)</span> and <span class="process-math">\(y \rightarrow x\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#finding-an-inverse-function-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#finding-an-inverse-function-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="finding-an-inverse-function-3-1-2">
+<div class="para" id="finding-an-inverse-function-3-1-2-1">Solve the resulting equation for <span class="process-math">\(y\)</span><div class="autopermalink" data-description="Paragraph"><a href="#finding-an-inverse-function-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#finding-an-inverse-function-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="finding-an-inverse-function-3-1-3">
+<div class="para" id="finding-an-inverse-function-3-1-3-1">Let <span class="process-math">\(y = f^{-1}(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#finding-an-inverse-function-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#finding-an-inverse-function-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#finding-an-inverse-function-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.5.1: Finding an inverse function"><a href="#finding-an-inverse-function" title="Copy heading and permalink for Subsection 1.2.5.1: Finding an inverse function" aria-label="Copy heading and permalink for Subsection 1.2.5.1: Finding an inverse function">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.5: Inverse Functions"><a href="#inverse-functions" title="Copy heading and permalink for Subsection 1.2.5: Inverse Functions" aria-label="Copy heading and permalink for Subsection 1.2.5: Inverse Functions">🔗</a></div></section><section class="subsection" id="exponential-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="space"> </span><span class="title">Exponential Functions</span>
+</h3>
+<div class="para" id="exponential-functions-2">An <dfn class="terminology">exponential function</dfn> is a function of the form <span class="process-math">\(f(x) = a^x\)</span> where <span class="process-math">\(a &gt; 0\)</span> is a real number called the <dfn class="terminology">base</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exponential-functions-3">The <dfn class="terminology">natural exponential function</dfn>, <span class="process-math">\(f(x) = e^x\text{,}\)</span> has base <span class="process-math">\(e\text{,}\)</span> a non-terminating, non-repeating number (<span class="process-math">\(2.718281...\)</span>).<div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="exponential-functions-4">If <span class="process-math">\(f(x) = a^x\text{,}\)</span> with <span class="process-math">\(a&gt;0\text{,}\)</span> then:<div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="exponential-functions-5">
+<ul class="disc" id="exponential-functions-5-1">
+<li id="exponential-functions-5-1-1">
+<div class="para" id="exponential-functions-5-1-1-1">The domain of <span class="process-math">\(f(x)\)</span> is <span class="process-math">\((-\infty,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exponential-functions-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exponential-functions-5-1-2">
+<div class="para" id="exponential-functions-5-1-2-1">The range of <span class="process-math">\(f(x)\)</span> is <span class="process-math">\((0,\infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exponential-functions-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exponential-functions-5-1-3">
+<div class="para" id="exponential-functions-5-1-3-1">The graph of <span class="process-math">\(f(x)\)</span> has a horizontal asymptote at <span class="process-math">\(y = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exponential-functions-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exponential-functions-5-1-4">
+<div class="para" id="exponential-functions-5-1-4-1">The graph contains the point <span class="process-math">\((0,1)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-5-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exponential-functions-5-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exponential-functions-5-1-5">
+<div class="para" id="exponential-functions-5-1-5-1">If <span class="process-math">\(a &gt; 1\text{,}\)</span> the function is always increasing<div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-5-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exponential-functions-5-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="exponential-functions-5-1-6">
+<div class="para" id="exponential-functions-5-1-6-1">If <span class="process-math">\(0&lt;a&lt;1\text{,}\)</span> the function is always decreasing<div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-5-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#exponential-functions-5-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#exponential-functions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="laws-of-exponents"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.6.1</span><span class="space"> </span><span class="title">Laws of Exponents</span>
+</h4>
+<div class="para" id="laws-of-exponents-2">For any positive integers <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> and any real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-3">2<div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-4">
+<span class="process-math">\(a^n = a \cdot a \cdots a\)</span> (<span class="process-math">\(n\)</span> times)<div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-5">
+<span class="process-math">\(a^0 = 1\text{,}\)</span> <span class="process-math">\(a \neq 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-6">
+<span class="process-math">\(a^{-n} = \dfrac{1}{a^n}\text{,}\)</span> <span class="process-math">\(a \neq 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-7">
+<span class="process-math">\(a^m \cdot a^n = a^{m+n}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-8">
+<span class="process-math">\(\dfrac{a^m}{a^n} = a^{m-n}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-9">
+<span class="process-math">\(\left(a^m\right)^n = a^{m\cdot n}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-10">
+<span class="process-math">\(\left(a \cdot b\right)^n = a^n \cdot b^n\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-11">
+<span class="process-math">\(a^{m/n} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-12">
+<span class="process-math">\(\left(\dfrac{a}{b}\right)^n = \dfrac{a^n}{b^n}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-13">
+<span class="process-math">\(\left(\dfrac{a}{b}\right)^{-n} = \left(\dfrac{b}{a}\right)^n = \dfrac{b^n}{a^n}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-exponents-14">Common errors using exponents:<div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="laws-of-exponents-15">
+<ul class="disc" id="laws-of-exponents-15-1">
+<li id="laws-of-exponents-15-1-1">
+<div class="para" id="laws-of-exponents-15-1-1-1">
+<span class="process-math">\(\displaystyle (a+b)^n \neq a^n + b^n\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-15-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#laws-of-exponents-15-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="laws-of-exponents-15-1-2">
+<div class="para" id="laws-of-exponents-15-1-2-1">
+<span class="process-math">\(\displaystyle (-a)^n \neq -a^n\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-15-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#laws-of-exponents-15-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#laws-of-exponents-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.6.1: Laws of Exponents"><a href="#laws-of-exponents" title="Copy heading and permalink for Subsection 1.2.6.1: Laws of Exponents" aria-label="Copy heading and permalink for Subsection 1.2.6.1: Laws of Exponents">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.6: Exponential Functions"><a href="#exponential-functions" title="Copy heading and permalink for Subsection 1.2.6: Exponential Functions" aria-label="Copy heading and permalink for Subsection 1.2.6: Exponential Functions">🔗</a></div></section><section class="subsection" id="logarithmic-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="space"> </span><span class="title">Logarithmic Functions</span>
+</h3>
+<div class="para" id="logarithmic-functions-2">The inverse of an exponential function with base <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(y = a^x\text{,}\)</span> is a <dfn class="terminology">logarithmic function</dfn> with base <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(y = \log_{a}(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="logarithmic-functions-3">The inverse of the natural exponential function, <span class="process-math">\(y = e^x\text{,}\)</span> is the <dfn class="terminology">natural logarithmic function</dfn>, <span class="process-math">\(y = \ln(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="logarithmic-functions-4">If <span class="process-math">\(y = \log_{a}(x)\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="logarithmic-functions-5">
+<ul class="disc" id="logarithmic-functions-5-1">
+<li id="logarithmic-functions-5-1-1">
+<div class="para" id="logarithmic-functions-5-1-1-1">This is equivalent to <span class="process-math">\(x = a^y\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#logarithmic-functions-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="logarithmic-functions-5-1-2">
+<div class="para" id="logarithmic-functions-5-1-2-1">The domain of this function is <span class="process-math">\((0, \infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#logarithmic-functions-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="logarithmic-functions-5-1-3">
+<div class="para" id="logarithmic-functions-5-1-3-1">The range of this function is <span class="process-math">\((-\infty, \infty)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#logarithmic-functions-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="logarithmic-functions-5-1-4">
+<div class="para" id="logarithmic-functions-5-1-4-1">The graph of this function has a vertical asymptote at <span class="process-math">\(x = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-5-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#logarithmic-functions-5-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="logarithmic-functions-5-1-5">
+<div class="para" id="logarithmic-functions-5-1-5-1">The graph contains the point <span class="process-math">\((1,0)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-5-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#logarithmic-functions-5-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="logarithmic-functions-6">Since logarithmic and exponential functions are inverses of each other, then<div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="logarithmic-functions-7">
+<ul class="disc" id="logarithmic-functions-7-1">
+<li id="logarithmic-functions-7-1-1">
+<div class="para" id="logarithmic-functions-7-1-1-1">
+<span class="process-math">\(\displaystyle \log_{a}(a^x) = x = a^{\log_a(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-7-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#logarithmic-functions-7-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="logarithmic-functions-7-1-2">
+<div class="para" id="logarithmic-functions-7-1-2-1">
+<span class="process-math">\(\displaystyle \ln(e^x) = x = e^{\ln(x)}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#logarithmic-functions-7-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#logarithmic-functions-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="subsection" id="laws-of-logarithms"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.7.1</span><span class="space"> </span><span class="title">Laws of Logarithms</span>
+</h4>
+<div class="para" id="laws-of-logarithms-2">For any positive numbers <span class="process-math">\(a, x, y\text{,}\)</span> and any real number <span class="process-math">\(r\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-logarithms-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-logarithms-3">2<div class="autopermalink" data-description="Paragraph"><a href="#laws-of-logarithms-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-logarithms-4">
+<span class="process-math">\(\log_{a}a = 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-logarithms-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-logarithms-5">
+<span class="process-math">\(\log_{a}1 = 0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-logarithms-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-logarithms-6">
+<span class="process-math">\(\log_{a}\left(\dfrac{x}{y}\right) = \log_{a}x - \log_{a}y\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-logarithms-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-logarithms-7">
+<span class="process-math">\(\log_{a}(xy) = \log_{a}x + \log_{a}y\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-logarithms-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-logarithms-8">
+<span class="process-math">\(\log_{a}(x^r) = r\log_{a}x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-logarithms-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="laws-of-logarithms-9">
+<span class="process-math">\(\log_{a}x = \dfrac{\ln x}{\ln a}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#laws-of-logarithms-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.7.1: Laws of Logarithms"><a href="#laws-of-logarithms" title="Copy heading and permalink for Subsection 1.2.7.1: Laws of Logarithms" aria-label="Copy heading and permalink for Subsection 1.2.7.1: Laws of Logarithms">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.7: Logarithmic Functions"><a href="#logarithmic-functions" title="Copy heading and permalink for Subsection 1.2.7: Logarithmic Functions" aria-label="Copy heading and permalink for Subsection 1.2.7: Logarithmic Functions">🔗</a></div></section><section class="subsection" id="trigonometry"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="space"> </span><span class="title">Trigonometry</span>
+</h3>
+<section class="subsection" id="the-six-trigonometric-functions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.1</span><span class="space"> </span><span class="title">The six trigonometric functions</span>
+</h4>
+<div class="para" id="the-six-trigonometric-functions-2">Let <span class="process-math">\((x,y)\)</span> be a point on a circle of radius <span class="process-math">\(r\)</span> associated with the angle <span class="process-math">\(\theta\text{.}\)</span> Note that <span class="process-math">\(x\)</span> represents the length of the horizontal leg of the right triangle formed, <span class="process-math">\(y\)</span> represents the length of the vertical leg, and <span class="process-math">\(r\)</span> represents the length of the hypotenuse. Then the six trigonometric functions are defined as follows:<div class="autopermalink" data-description="Paragraph"><a href="#the-six-trigonometric-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="the-six-trigonometric-functions-3">2<div class="autopermalink" data-description="Paragraph"><a href="#the-six-trigonometric-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="the-six-trigonometric-functions-4">
+<span class="process-math">\(\sin\theta = \dfrac{y}{r}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#the-six-trigonometric-functions-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="the-six-trigonometric-functions-5">
+<span class="process-math">\(\cos\theta = \dfrac{x}{r}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#the-six-trigonometric-functions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="the-six-trigonometric-functions-6">
+<span class="process-math">\(\tan\theta = \dfrac{\sin\theta}{\cos\theta} = \dfrac{y}{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#the-six-trigonometric-functions-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="the-six-trigonometric-functions-7">
+<span class="process-math">\(\csc\theta = \dfrac{1}{\sin\theta} = \dfrac{r}{y}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#the-six-trigonometric-functions-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="the-six-trigonometric-functions-8">
+<span class="process-math">\(\sec\theta = \dfrac{1}{\cos\theta} = \dfrac{r}{x}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#the-six-trigonometric-functions-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="the-six-trigonometric-functions-9">
+<span class="process-math">\(\cot\theta = \dfrac{1}{\tan\theta} = \dfrac{\cos\theta}{\sin\theta} = \dfrac{x}{y}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#the-six-trigonometric-functions-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.8.1: The six trigonometric functions"><a href="#the-six-trigonometric-functions" title="Copy heading and permalink for Subsection 1.2.8.1: The six trigonometric functions" aria-label="Copy heading and permalink for Subsection 1.2.8.1: The six trigonometric functions">🔗</a></div></section><section class="subsection" id="the-unit-circle"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.2</span><span class="space"> </span><span class="title">The Unit Circle</span>
+</h4>
+<div class="para" id="the-unit-circle-2">The <dfn class="terminology">unit circle</dfn> is a circle with radius 1. For any ordered pair, <span class="process-math">\((x,y)\text{,}\)</span> on the unit circle, <span class="process-math">\(\cos \theta = x\)</span> and <span class="process-math">\(\sin \theta = y\text{.}\)</span> For example, <span class="process-math">\(\cos\left(\dfrac{\pi}{3}\right) = \dfrac{1}{2}\)</span> and <span class="process-math">\(\sin\left(\dfrac{\pi}{3}\right) = \dfrac{\sqrt{3}}{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#the-unit-circle-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="the-unit-circle-3">The unit circle is commonly viewed as being sectioned into four quadrants.<div class="autopermalink" data-description="Paragraph"><a href="#the-unit-circle-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="the-unit-circle-4">
+<ul class="disc" id="the-unit-circle-4-1">
+<li id="the-unit-circle-4-1-1">
+<div class="para" id="the-unit-circle-4-1-1-1">Quadrant I: Top right quadrant; <span class="process-math">\(0 &lt; \theta &lt; \dfrac{\pi}{2}\text{;}\)</span> <span class="process-math">\(\sin \theta\)</span> and <span class="process-math">\(\cos\theta\)</span> are positive<div class="autopermalink" data-description="Paragraph"><a href="#the-unit-circle-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#the-unit-circle-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="the-unit-circle-4-1-2">
+<div class="para" id="the-unit-circle-4-1-2-1">Quadrant II: Top left quadrant; <span class="process-math">\(\dfrac{\pi}{2} &lt; \theta &lt; \pi\text{;}\)</span> <span class="process-math">\(\sin \theta\)</span> is positive, <span class="process-math">\(\cos\theta\)</span> is negative<div class="autopermalink" data-description="Paragraph"><a href="#the-unit-circle-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#the-unit-circle-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="the-unit-circle-4-1-3">
+<div class="para" id="the-unit-circle-4-1-3-1">Quadrant III: Bottom left quadrant; <span class="process-math">\(\pi &lt; \theta &lt; \dfrac{3\pi}{2}\text{;}\)</span> <span class="process-math">\(\sin \theta\)</span> and <span class="process-math">\(\cos\theta\)</span> are negative<div class="autopermalink" data-description="Paragraph"><a href="#the-unit-circle-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#the-unit-circle-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="the-unit-circle-4-1-4">
+<div class="para" id="the-unit-circle-4-1-4-1">Quadrant IV: Bottom right quadrant; <span class="process-math">\(\dfrac{3\pi}{2} &lt; \theta &lt; 2\pi\text{;}\)</span> <span class="process-math">\(\sin \theta\)</span> is negative, <span class="process-math">\(\cos\theta\)</span> is positive<div class="autopermalink" data-description="Paragraph"><a href="#the-unit-circle-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#the-unit-circle-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#the-unit-circle-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.8.2: The Unit Circle"><a href="#the-unit-circle" title="Copy heading and permalink for Subsection 1.2.8.2: The Unit Circle" aria-label="Copy heading and permalink for Subsection 1.2.8.2: The Unit Circle">🔗</a></div></section><section class="subsection" id="graphs-of-trigonometric-functions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.3</span><span class="space"> </span><span class="title">Graphs of trigonometric functions</span>
+</h4>
+<div class="autopermalink" data-description="Subsection 1.2.8.3: Graphs of trigonometric functions"><a href="#graphs-of-trigonometric-functions" title="Copy heading and permalink for Subsection 1.2.8.3: Graphs of trigonometric functions" aria-label="Copy heading and permalink for Subsection 1.2.8.3: Graphs of trigonometric functions">🔗</a></div></section><section class="subsection" id="inverse-trigonometric-functions"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.4</span><span class="space"> </span><span class="title">Inverse trigonometric functions</span>
+</h4>
+<div class="para" id="inverse-trigonometric-functions-2">Trigonometric functions in their conventional sense are not one-to-one since the function values repeat several times. So, in order to define inverse trigonometric functions, we must restrict the domains of our trigonometric functions.<div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="inverse-trigonometric-functions-3">
+<ul class="disc" id="inverse-trigonometric-functions-3-1">
+<li id="inverse-trigonometric-functions-3-1-1">
+<div class="para" id="inverse-trigonometric-functions-3-1-1-1">
+<span class="process-math">\(\sin^{-1}(x) = \arcsin(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="inverse-trigonometric-functions-3-1-1-2">
+<ul class="circle" id="inverse-trigonometric-functions-3-1-1-2-1">
+<li id="inverse-trigonometric-functions-3-1-1-2-1-1">
+<div class="para" id="inverse-trigonometric-functions-3-1-1-2-1-1-1">
+<span class="process-math">\(y = \sin^{-1}(x)\)</span> is equivalent to <span class="process-math">\(x = \sin(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-1-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-trigonometric-functions-3-1-1-2-1-2">
+<div class="para" id="inverse-trigonometric-functions-3-1-1-2-1-2-1">The domain of <span class="process-math">\(y=\sin^{-1}(x)\)</span> is <span class="process-math">\(-1 \leq x \leq 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-1-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-trigonometric-functions-3-1-1-2-1-3">
+<div class="para" id="inverse-trigonometric-functions-3-1-1-2-1-3-1">The range of <span class="process-math">\(y=\sin^{-1}(x)\)</span> is <span class="process-math">\(-\dfrac{\pi}{2} \leq y \leq \dfrac{\pi}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-1-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-trigonometric-functions-3-1-2">
+<div class="para" id="inverse-trigonometric-functions-3-1-2-1">
+<span class="process-math">\(\cos^{-1}(x) = \arccos(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="inverse-trigonometric-functions-3-1-2-2">
+<ul class="circle" id="inverse-trigonometric-functions-3-1-2-2-1">
+<li id="inverse-trigonometric-functions-3-1-2-2-1-1">
+<div class="para" id="inverse-trigonometric-functions-3-1-2-2-1-1-1">
+<span class="process-math">\(y = \cos^{-1}(x)\)</span> is equivalent to <span class="process-math">\(x = \cos(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-trigonometric-functions-3-1-2-2-1-2">
+<div class="para" id="inverse-trigonometric-functions-3-1-2-2-1-2-1">The domain of <span class="process-math">\(y=\cos^{-1}(x)\)</span> is <span class="process-math">\(-1 \leq x \leq 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-trigonometric-functions-3-1-2-2-1-3">
+<div class="para" id="inverse-trigonometric-functions-3-1-2-2-1-3-1">The range of <span class="process-math">\(y=\cos^{-1}(x)\)</span> is <span class="process-math">\(0 \leq y \leq \pi\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-trigonometric-functions-3-1-3">
+<div class="para" id="inverse-trigonometric-functions-3-1-3-1">
+<span class="process-math">\(\tan^{-1}(x) = \arctan(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="inverse-trigonometric-functions-3-1-3-2">
+<ul class="circle" id="inverse-trigonometric-functions-3-1-3-2-1">
+<li id="inverse-trigonometric-functions-3-1-3-2-1-1">
+<div class="para" id="inverse-trigonometric-functions-3-1-3-2-1-1-1">
+<span class="process-math">\(y = \tan^{-1}(x)\)</span> is equivalent to <span class="process-math">\(x = \tan(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-trigonometric-functions-3-1-3-2-1-2">
+<div class="para" id="inverse-trigonometric-functions-3-1-3-2-1-2-1">The domain of <span class="process-math">\(y=\tan^{-1}(x)\)</span> is <span class="process-math">\(-\infty &lt; x &lt; \infty\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-3-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="inverse-trigonometric-functions-3-1-3-2-1-3">
+<div class="para" id="inverse-trigonometric-functions-3-1-3-2-1-3-1">The range of <span class="process-math">\(y=\tan^{-1}(x)\)</span> is <span class="process-math">\(-\dfrac{\pi}{2} &lt; y &lt; \dfrac{\pi}{2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-3-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#inverse-trigonometric-functions-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#inverse-trigonometric-functions-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.8.4: Inverse trigonometric functions"><a href="#inverse-trigonometric-functions" title="Copy heading and permalink for Subsection 1.2.8.4: Inverse trigonometric functions" aria-label="Copy heading and permalink for Subsection 1.2.8.4: Inverse trigonometric functions">🔗</a></div></section><section class="subsection" id="trigonometric-identities"><h4 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.2.8.5</span><span class="space"> </span><span class="title">Trigonometric identities</span>
+</h4>
+<div class="para" id="trigonometric-identities-2">
+<dfn class="terminology">Pythagorian Trigonometric Identities</dfn><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="trigonometric-identities-3">
+<ul class="disc" id="trigonometric-identities-3-1">
+<li id="trigonometric-identities-3-1-1">
+<div class="para" id="trigonometric-identities-3-1-1-1">
+<span class="process-math">\(\displaystyle \sin^2(x) + \cos^2(x) = 1\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="trigonometric-identities-3-1-2">
+<div class="para" id="trigonometric-identities-3-1-2-1">
+<span class="process-math">\(\displaystyle \tan^2(x) + 1 = \sec^2(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="trigonometric-identities-3-1-3">
+<div class="para" id="trigonometric-identities-3-1-3-1">
+<span class="process-math">\(\displaystyle \cot^2(x) + 1 = \csc^2(x)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="trigonometric-identities-4">
+<dfn class="terminology">Addition/Subtraction Formulas</dfn><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="trigonometric-identities-5">
+<ul class="disc" id="trigonometric-identities-5-1">
+<li id="trigonometric-identities-5-1-1">
+<div class="para" id="trigonometric-identities-5-1-1-1">
+<span class="process-math">\(\displaystyle \sin(x+y) = \sin(x) \cos(y) + \cos(x)\sin(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="trigonometric-identities-5-1-2">
+<div class="para" id="trigonometric-identities-5-1-2-1">
+<span class="process-math">\(\displaystyle \cos(x+y) = \cos(x) \cos(y) - \sin(x) \sin(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="trigonometric-identities-5-1-3">
+<div class="para" id="trigonometric-identities-5-1-3-1">
+<span class="process-math">\(\displaystyle \sin(x-y) = \sin(x) \cos(y) - \cos(x) \sin(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="trigonometric-identities-5-1-4">
+<div class="para" id="trigonometric-identities-5-1-4-1">
+<span class="process-math">\(\displaystyle \cos(x-y) = \cos(x) \cos(y) + \sin(x) \sin(y)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-5-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-5-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="trigonometric-identities-6">
+<dfn class="terminology">Double-Angle Formulas</dfn><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="trigonometric-identities-7">
+<ul class="disc" id="trigonometric-identities-7-1">
+<li id="trigonometric-identities-7-1-1">
+<div class="para" id="trigonometric-identities-7-1-1-1">
+<span class="process-math">\(\displaystyle \sin(2x) = 2\sin x \cos x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-7-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-7-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="trigonometric-identities-7-1-2">
+<div class="para" id="trigonometric-identities-7-1-2-1">
+<span class="process-math">\(\displaystyle \cos(2x) = \cos^2 x - \sin^2 x\)</span><div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-7-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#trigonometric-identities-7-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#trigonometric-identities-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.2.8.5: Trigonometric identities"><a href="#trigonometric-identities" title="Copy heading and permalink for Subsection 1.2.8.5: Trigonometric identities" aria-label="Copy heading and permalink for Subsection 1.2.8.5: Trigonometric identities">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.2.8: Trigonometry"><a href="#trigonometry" title="Copy heading and permalink for Subsection 1.2.8: Trigonometry" aria-label="Copy heading and permalink for Subsection 1.2.8: Trigonometry">🔗</a></div></section><div class="autopermalink" data-description="Section 1.2: Precalculus Review"><a href="#sec-precalcrev" title="Copy heading and permalink for Section 1.2: Precalculus Review" aria-label="Copy heading and permalink for Section 1.2: Precalculus Review">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-section-intro.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
