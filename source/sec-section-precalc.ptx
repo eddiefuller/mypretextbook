@@ -8,7 +8,7 @@
 	</p>
 
 
-	<section xml:id="algebra">
+	<subsection xml:id="algebra">
 		<title>Algebra</title>
 
 
@@ -89,9 +89,9 @@
 			</ul></p>
 
 		</subsection>
-	</section>
+	</subsection>
 
-	<section xml:id="functions">
+	<subsection xml:id="functions">
 		<title>Functions</title>
 
 		<p>
@@ -242,9 +242,9 @@
 
 			</subsubsection>
 		</subsection>
-	</section>
+	</subsection>
 
-	<section xml:id="types-of-functions">
+	<subsection xml:id="types-of-functions">
 		<title>Types of Functions</title>
 
 
@@ -376,9 +376,9 @@
 
 
 		</subsection>
-	</section>
+	</subsection>
 
-	<section xml:id="transformation-of-functions">
+	<subsection xml:id="transformation-of-functions">
 		<title>Transformation of Functions</title>
 
 
@@ -477,9 +477,9 @@
 			</ul></p>
 
 		</subsection>
-	</section>
+	</subsection>
 
-	<section xml:id="inverse-functions">
+	<subsection xml:id="inverse-functions">
 		<title>Inverse Functions</title>
 
 		<p>
@@ -550,9 +550,9 @@
 			</ol></p>
 
 		</subsection>
-	</section>
+	</subsection>
 
-	<section xml:id="exponential-functions">
+	<subsection xml:id="exponential-functions">
 		<title>Exponential Functions</title>
 
 		<p>
@@ -682,9 +682,9 @@
 			</ul></p>
 
 		</subsection>
-	</section>
+	</subsection>
 
-	<section xml:id="logarithmic-functions">
+	<subsection xml:id="logarithmic-functions">
 		<title>Logarithmic Functions</title>
 
 		<p>
@@ -792,9 +792,9 @@
 			</p><!--</div attr= class="multicols">--><!--</div attr= class="itemize">-->
 
 		</subsection>
-	</section>
+	</subsection>
 
-	<section xml:id="trigonometry">
+	<subsection xml:id="trigonometry">
 		<title>Trigonometry</title>
 
 
@@ -1064,4 +1064,4 @@
 
 
 
-</section>
+</subsection>
